@@ -6,9 +6,15 @@
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 </head>
 
 <body>
+
+
     <div id="application">
         <h1>
             Make an application with the following requirements:
@@ -45,9 +51,38 @@
                 Allow users to edit the text of an existing todo
             </li>
         </ul>
-        <h1>
-            Go to the src directory and start editing index.html / index.js to get started.
-        </h1>
+
+        <hr>
+        <div style="margin: 10px">
+            <span>Enter todo here: </span>
+
+            <form name="todoForm" id="todoForm">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="todoText" id="todoText" onEnter>
+                    <br />
+                    <br />
+                    <button class="btn btn-primary" type="submit">Add</button>
+                </div>
+            </form>
+
+            <!-- For each todo inside of in-memory array, display -->
+
+            <h2>Todo</h2>
+
+            <div id="todoItems">
+
+            </div>
+
+            <h2>Complete</h2>
+
+            <div id="completedItems">
+
+            </div>
+
+
+
+        </div>
+        <hr>
         <h1 class="docs">
             Check out the following sites for help:
             <div><a href="https://www.w3schools.com/" target="_blank">w3schools</a></div>
