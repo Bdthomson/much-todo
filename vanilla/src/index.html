@@ -56,24 +56,33 @@
         <div style="margin: 10px">
             <span>Enter todo here: </span>
 
-            <form name="todoForm" id="todoForm">
+            <!-- <form name="todoForm" id="todoForm"> -->
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" name="todoText" id="todoText" onEnter>
                     <br />
                     <br />
-                    <button class="btn btn-primary" type="submit">Add</button>
+                    <button id="addButton" class="btn btn-primary" type="button">Add</button>
                 </div>
-            </form>
+            <!-- </form> -->
+
+            <br>
+            <button id="completeButton" class="btn btn-info" type="button">Mark All Completed</button>
+            <button id="uncompleteButton" class="btn btn-danger" type="button">Mark All Not Completed</button>
+
 
             <!-- For each todo inside of in-memory array, display -->
 
-            <h2>Todo</h2>
+            <h2>Todo
+                <span id="numTodosLeft"></span>
+            </h2>
 
             <div id="todoItems">
 
             </div>
 
-            <h2>Complete</h2>
+            <h2>Complete
+                <span id="numTodosComplete"></span>
+            </h2>
 
             <div id="completedItems">
 
